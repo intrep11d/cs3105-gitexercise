@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void printThis(char buffer[]);
+void greet(char buffer[]);
 
 int main() {
     char buffer[50];
 
-    printf("Enter message: ");
+    printf("Enter name: ");
     scanf("%s", &buffer);
-    printThis(buffer);
+    greet(buffer);
 
 }
 
-void printThis(char buffer[]) {
-    printf("Function is printing message: %s", buffer);
+void greet(char buffer[]) {
+    printf("Hello, %s!", buffer);
 }
